@@ -1,0 +1,26 @@
+There are  different modes we can put variables!
+
+1. Interactive mode:
+
+If we dont put the value for the variables and we use terraform apply command it will prompt a field for putting values.
+
+2. Command line flags:
+
+if we use terraform appply command then we use -var, we can provide the value with variable name.
+example: terraform apply -var "filename = text.txt" -var "length = 2" 
+
+3. Environment variable
+
+we can use the variable values in the form of Environment variables:
+such as $export TF_VAR_filename =" text.txt" then we can use the apply command
+
+4. variable defination files
+
+we can create a separte file containing values for the variables.
+ NOTE that, they need to have the extension of the file either terraform.tfvars or terraform.tfvars.json
+ or anyname.auto.tfvars or anyname.auto.tfvars.json
+
+ even if a situation arises: where we use four different type of mode for variable value assign process there is a presedence:
+ if we provide the varaiables with terraform apply -var "filename = text.txt", it will work first no matter which other we used. then comes variable 
+ defination files and env varaiables.
+ 
