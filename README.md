@@ -1,1 +1,1 @@
-# terraformBasic
+This is a repo contains some of the terraform basic variables need to use for reusability, because when we need to provision large infrastructure we need to avoid code duplication, hence we can use varaible and this will help us to avoid extra work.
